@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react';
 
 export interface ButtonProps {
-  text?: string;
+  cta?: string;
   primary?: boolean;
   disabled?: boolean;
   size?: 'small' | 'medium' | 'large';

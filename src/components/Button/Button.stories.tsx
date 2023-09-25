@@ -17,7 +17,7 @@ export const Primary: Story = (args) => (
 Primary.args = {
   primary: true,
   disabled: false,
-  text: 'Primary',
+  cta: 'Primary',
 };
 
 export const Secondary: Story = (args) => (
@@ -26,7 +26,7 @@ export const Secondary: Story = (args) => (
 Secondary.args = {
   primary: false,
   disabled: false,
-  text: 'Secondary',
+  cta: 'Secondary',
 };
 
 export const Disabled: Story = (args) => (
@@ -35,7 +35,7 @@ export const Disabled: Story = (args) => (
 Disabled.args = {
   primary: false,
   disabled: true,
-  text: 'Disabled',
+  cta: 'Disabled',
 };
 
 export const Small: Story = (args) => (
@@ -45,7 +45,7 @@ Small.args = {
   primary: true,
   disabled: false,
   size: 'small',
-  text: 'Small',
+  cta: 'Small',
 };
 
 export const Medium: Story = (args) => (
@@ -55,7 +55,7 @@ Medium.args = {
   primary: true,
   disabled: false,
   size: 'medium',
-  text: 'Medium',
+  cta: 'Medium',
 };
 
 export const Large: Story = (args) => (
@@ -65,5 +65,5 @@ Large.args = {
   primary: true,
   disabled: false,
   size: 'large',
-  text: 'Large',
+  cta: 'Large',
 };
