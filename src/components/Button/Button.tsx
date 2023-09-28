@@ -40,6 +40,7 @@ const Button: React.FC<ButtonProps> = ({
   disabled,
   cta,
   onClick,
+  style,
   ...props
 }) => {
   return (
@@ -50,6 +51,7 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       size={size}
       {...props}
+      style={style}
     >
       {cta}
     </StyledButton>

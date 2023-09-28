@@ -6,4 +6,5 @@ export interface ButtonProps {
   disabled?: boolean;
   size?: 'small' | 'medium' | 'large';
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  style?: React.CSSProperties;
 }
