@@ -27,4 +27,11 @@ module.exports = {
   watchOptions: {
     ignored: /node_modules/,
   },
+  externals: {
+    'styled-components': {
+      commonjs: 'styled-components',
+      commonjs2: 'styled-components',
+      amd: 'styled-components',
+    },
+  },
 };

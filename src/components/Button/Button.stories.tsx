@@ -5,65 +5,49 @@ import Button from './Button';
 const meta: Meta<typeof Button> = {
   component: Button,
   title: 'Button',
-  argTypes: {},
 };
 export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = (args) => (
-  <Button data-testId="InputField-id" {...args} />
-);
-Primary.args = {
-  primary: true,
-  disabled: false,
-  text: 'Primary',
+export const Solid: Story = (args) => <Button {...args} />;
+Solid.args = {
+  variant: 'solid',
+  text: 'Solid',
 };
 
-export const Secondary: Story = (args) => (
-  <Button data-testId="InputField-id" {...args} />
-);
-Secondary.args = {
-  primary: false,
-  disabled: false,
-  text: 'Secondary',
+export const Outlined: Story = (args) => <Button {...args} />;
+Outlined.args = {
+  variant: 'outlined',
+  text: 'Outlined',
 };
 
-export const Disabled: Story = (args) => (
-  <Button data-testId="InputField-id" {...args} />
-);
+export const Text: Story = (args) => <Button {...args} />;
+Text.args = {
+  variant: 'text',
+  text: 'Text',
+};
+
+export const Disabled: Story = (args) => <Button {...args} />;
 Disabled.args = {
-  primary: false,
   disabled: true,
   text: 'Disabled',
 };
 
-export const Small: Story = (args) => (
-  <Button data-testId="InputField-id" {...args} />
-);
+export const Small: Story = (args) => <Button {...args} />;
 Small.args = {
-  primary: true,
-  disabled: false,
   size: 'small',
   text: 'Small',
 };
 
-export const Medium: Story = (args) => (
-  <Button data-testId="InputField-id" {...args} />
-);
+export const Medium: Story = (args) => <Button {...args} />;
 Medium.args = {
-  primary: true,
-  disabled: false,
   size: 'medium',
   text: 'Medium',
 };
 
-export const Large: Story = (args) => (
-  <Button data-testId="InputField-id" {...args} />
-);
+export const Large: Story = (args) => <Button {...args} />;
 Large.args = {
-  primary: true,
-  disabled: false,
   size: 'large',
   text: 'Large',
 };
